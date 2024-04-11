@@ -17,24 +17,24 @@ getgenv()['JsonDecode'] = function(msg)
     return game:GetService("HttpService"):JSONDecode(msg)
 end
 getgenv()['Check_Setting'] = function(Name)
-    if not _G.Dis and not isfolder('Play Back X Hub') then
-        makefolder('Play Back X Hub')
+    if not _G.Dis and not isfolder('Tri Minh X Hub') then
+        makefolder('Tri Minh X Hub')
     end
-    if not _G.Dis and not isfile('Play Back X Hub/'..Name..'.json') then
-        writefile('Play Back X Hub/'..Name..'.json',JsonEncode(_G.Setting_table))
+    if not _G.Dis and not isfile('Tri Minh X Hub/'..Name..'.json') then
+        writefile('Tri Minh X Hub/'..Name..'.json',JsonEncode(_G.Setting_table))
     end
 end
 getgenv()['Get_Setting'] = function(Name)
-    if not _G.Dis and isfolder('Play Back X Hub') and isfile('Play Back X Hub/'..Name..'.json') then
-        _G.Setting_table = JsonDecode(readfile('Play Back X Hub/'..Name..'.json'))
+    if not _G.Dis and isfolder('Tri Minh X Hub') and isfile('Tri Minh X Hub/'..Name..'.json') then
+        _G.Setting_table = JsonDecode(readfile('Tri Minh X Hub/'..Name..'.json'))
         return _G.Setting_table
 	elseif not _G.Dis then
         Check_Setting(Name)
     end
 end
 getgenv()['Update_Setting'] = function(Name)
-    if not _G.Dis and isfolder('Play Back X Hub') and isfile('Play Back X Hub/'..Name..'.json') then
-        writefile('Play Back X Hub/'..Name..'.json',JsonEncode(_G.Setting_table))
+    if not _G.Dis and isfolder('Tri Minh X Hub') and isfile('Tri Minh X Hub/'..Name..'.json') then
+        writefile('Tri Minh X Hub/'..Name..'.json',JsonEncode(_G.Setting_table))
 	elseif not _G.Dis then
         Check_Setting(Name)
     end
@@ -134,21 +134,21 @@ if IKAI then
 	local Properties = {
 		RoundFrame = {
 			BackgroundTransparency = 1,
-			Image = "http://www.roblox.com/asset/?id=5554237731",
+			Image = "http://www.roblox.com/asset/?id=17094709022",
 			ScaleType = Enum.ScaleType.Slice,
 			SliceCenter = Rect.new(3,3,297,297)
 		},
 		SmoothButton = {
 			AutoButtonColor = false,
 			BackgroundTransparency = 1,
-			Image = "http://www.roblox.com/asset/?id=5554237731",
+			Image = "http://www.roblox.com/asset/?id=17094709022",
 			ScaleType = Enum.ScaleType.Slice,
 			SliceCenter = Rect.new(3,3,297,297)
 		},
 		Shadow = {
 			Name = "Shadow",
 			BackgroundTransparency = 1,
-			Image = "http://www.roblox.com/asset/?id=5554236805",
+			Image = "http://www.roblox.com/asset/?id=17094709022",
 			ScaleType = Enum.ScaleType.Slice,
 			SliceCenter = Rect.new(23,23,277,277),
 			Size = UDim2.fromScale(1,1) + UDim2.fromOffset(30,30),
