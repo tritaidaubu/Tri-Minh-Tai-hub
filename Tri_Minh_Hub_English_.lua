@@ -116,7 +116,7 @@ function Notif.New(text, timee)
     uicorner_2.Parent = text_button
 
     local image_button = Instance.new("ImageButton")
-    image_button.Image = "rbxassetid://17124552278"
+    image_button.Image = "rbxassetid://17094709022"
     image_button.ImageColor3 = Color3.new(0.784314, 0.784314, 0.784314)
     image_button.ImageRectOffset = Vector2.new(924, 724)
     image_button.ImageRectSize = Vector2.new(36, 36)
@@ -189,7 +189,7 @@ ImageButton1.BorderSizePixel = 0
 ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ImageButton1.Size = UDim2.new(0, 50, 0, 50)
 ImageButton1.Draggable = true
-ImageButton1.Image = "rbxassetid://17124552278"
+ImageButton1.Image = "rbxassetid://17094709022"
 ImageButton1.MouseButton1Down:connect(function()
 game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
 game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
@@ -204,8 +204,8 @@ UIGradient.Color = ColorSequence.new{
 }
 UIGradient.Parent = UIStroke
 
-if game:GetService("CoreGui"):FindFirstChild("AppleHub") then
-    game:GetService("CoreGui"):FindFirstChild("AppleHub"):Destroy()
+if game:GetService("CoreGui"):FindFirstChild("TriMinhHub") then
+    game:GetService("CoreGui"):FindFirstChild("TriMinhHub"):Destroy()
 end
 
 repeat wait(1) until game:IsLoaded()
@@ -786,7 +786,7 @@ function Update:Window(text,logo,keybind)
     local main = {}
     function main:AddButton(text, callback)
         if logo == nil then
-            logo = "15009422255"
+            logo = "17094709022"
         end
         local Button = Instance.new("Frame")
         local UICorner = Instance.new("UICorner")
@@ -886,7 +886,7 @@ function Update:Window(text,logo,keybind)
     function main:AddToggle(TogInfo ,default, callback)
         local toggle = false
         if logo == nil then
-            logo = "15009422255"
+            logo = "17094709022"
         end
         local CheckFrame = Instance.new("Frame")
         local CheckFrame2 = Instance.new("Frame")
@@ -933,7 +933,7 @@ function Update:Window(text,logo,keybind)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 5, 0, 6)
         ImageLabel.Size = UDim2.new(0, 20, 0, 20)
-        ImageLabel.Image = "rbxassetid://15435099885"
+        ImageLabel.Image = "rbxassetid://17094709022"
         ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         Space.Name = "Space"
@@ -967,7 +967,7 @@ function Update:Window(text,logo,keybind)
         ImageButton.Position = UDim2.new(0, 352, 0, 4)
         ImageButton.Size = UDim2.new(0, 23, 0, 23)
         ImageButton.ZIndex = 2
-        ImageButton.Image = "rbxassetid://3926311105"
+        ImageButton.Image = "rbxassetid://17094709022"
         ImageButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
         ImageButton.ImageRectOffset = Vector2.new(940, 784)
         ImageButton.ImageRectSize = Vector2.new(48, 48)
@@ -1919,7 +1919,7 @@ return uitab
 end
 ---- Káº¿t KhÃºc Ui
 
-function intiAppleHub() 
+function intiTriMinhHub() 
 _G.antiscan = true
 getgenv().A = require(game:GetService("ReplicatedStorage").CombatFramework.RigLib).wrapAttackAnimationAsync
 getgenv().B = require(game.Players.LocalPlayer.PlayerScripts.CombatFramework.Particle).play
@@ -13706,7 +13706,7 @@ Misc:AddButton("Kaitun Cap", function(value)
 		for k,v in pairs(cac) do
 			if ListHuhu[v] and game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Buy"..v,true) == 1 then 
 				local huhu = Instance.new("ImageLabel",MeleeG)
-				huhu.Image = "rbxassetid://17124552278"
+				huhu.Image = "rbxassetid://17094709022"
 				huhu.ImageRectSize = Vector2.new(100,100)
 				huhu.ImageRectOffset = ListHuhu[v]*100
 			end
