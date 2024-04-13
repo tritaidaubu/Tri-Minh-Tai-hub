@@ -7422,11 +7422,11 @@ spawn(function()
 end)
 
 
-local ToggleMirageIsland = Tabs.Hop:AddToggle("ToggleMirageIsland", {Title = "Find Mirage Island",Description = "Tìm đảo bí ẩn", Default = true })
+local ToggleMirageIsland = Tabs.Hop:AddToggle("ToggleMirageIsland", {Title = "Find Mirage Island",Description = "Tìm đảo bí ẩn", Default = false })
 ToggleMirageIsland:OnChanged(function(Value)
     _G.FindMirageIsland = Value
 end)
-Options.ToggleMirageIsland:SetValue(true)
+Options.ToggleMirageIsland:SetValue(false)
 
 spawn(function()
     while wait() do
