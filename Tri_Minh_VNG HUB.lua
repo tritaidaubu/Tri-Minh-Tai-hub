@@ -5,7 +5,7 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
     Title = "Tri Minh hub",
-    SubTitle = "cảm ơn đã dùng script của tôi",
+    SubTitle = "bố mày là loli",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = true,
@@ -492,7 +492,7 @@ NameMon = "Giant Islander"
 CFrameQ = CFrame.new(5446.8793945313, 601.62945556641, 749.45672607422)
 CFrameMon = CFrame.new(5009.5068359375, 664.11071777344, -40.960144042969)
 elseif Lv == 1700 or Lv <= 1724 or SelectMonster == "Marine Commodore" or SelectArea == 'Marine Tree' then -- Marine Commodore
-Ms = "Marine Commodore"
+Ms = "ne Commodore"
 NameQuest = "MarineTreeIsland"
 QuestLv = 1
 NameMon = "Marine Commodore"
@@ -7364,7 +7364,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709143733" then
             Hop()
             Fluent:Notify({
-                Title = "Maris Hub",
+                Title = "Tri Minh Hub",
                 Content = "Turn Off Find Full Moon...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -7380,7 +7380,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=17094709022" then
             Hop()
             Fluent:Notify({
-                Title = "Maris hub",
+                Title = "Tri Minh Hub",
                 Content = "Hop...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -7416,8 +7416,8 @@ InterfaceManager:SetFolder("ZedrScriptHub")
 SaveManager:SetFolder("ZedrScriptHub/specific-game")
 Window:SelectTab(1)
 Fluent:Notify({
-    Title = "Script By Tri Minh sad ",
-    Content = "Script Của Trí Minh Hub.",
+    Title = "Tri Minh Hub wibu =) ",
+    Content = "Trí Minh Hub.",
     Duration = 8
 })
 SaveManager:LoadAutoloadConfig()
