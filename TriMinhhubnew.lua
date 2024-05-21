@@ -1,4 +1,3 @@
-    ["Discord Webhook"] = "https://discord.com/api/webhooks/1242359651383775242/sGGETth772h2-BD3PnzjsMf0BzsFM4zaxA-IE5HmVon2jpPc8bEUHQyd-axYkDrTqlgx",
 repeat wait() until game:IsLoaded()
 repeat wait() until game:GetService("Players")
 repeat wait() until game:GetService("Players").LocalPlayer
