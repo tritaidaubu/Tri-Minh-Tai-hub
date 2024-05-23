@@ -1,40 +1,77 @@
 getgenv().Setting = {
-    ["Team"] = "Pirates",
-    ["Chat"] = {},
-    ["Skip Race V4"] = true,
-    ["Misc"] = {
-        ["Enable Lock Bounty"] = true,
-        ["Lock Bounty"] = {0, 300000000},
-        ["Hide Health"] = {4500,5000},
-        ["Lock Camera"] = true,
-        ["Enable Cam Farm"] = true,
-        ["White Screen"] = false, 
-        ["FPS Boost"] = false,
-        ["Bypass TP"] = true, 
-        ["Random & Store Fruit"] = true
+    ["Hunt"] = {
+        ["Team"] = "Pirates"
     },
-    ["Item"] = {
-        ["Melee"] = {["Enable"] = true,
-            ["Z"] = {["Enable"] = true, ["Hold Time"] = 1.5},
-            ["X"] = {["Enable"] = true, ["Hold Time"] = 0.1},
-            ["C"] = {["Enable"] = true, ["Hold Time"] = 0.1}
+    ["Webhook"] = {
+        ["Enable"] = true,
+        ["Url"] = "https://discord.com/api/webhooks/1173059368447655996/V118UZx4nJ0bCfgKHzFfxtsPav8JT9IA18iPT9iv49CNvinGtqJqhvNOjm7jifHRsGbY"
+    },
+    ["Skip"] = {
+        ["V4"] = false,
+        ["Fruit"] = {
+            "Portal-Portal",
+            "Mammoth-Mammoth",
+            "Buddha-Buddha"
         },
-        ["Blox Fruit"] = {["Enable"] = true,
-            ["Z"] = {["Enable"] = true, ["Hold Time"] = 1.5},
-            ["X"] = {["Enable"] = true, ["Hold Time"] = 0},
-            ["C"] = {["Enable"] = true, ["Hold Time"] = 0},
-            ["V"] = {["Enable"] = true, ["Hold Time"] = 0},
-            ["F"] = {["Enable"] = false, ["Hold Time"] = 0}
+        ["Near-Island Max Distance"] = 7000
+    },
+    ["Chat"] = {
+        ["Enable"] = true,
+        ["Content"] = "I Got Night Hub Bounty Hunting Script"
+    },
+    ["Misc"] = {
+        ["Hold Until Max Skill Preserve"] = false,
+        ["Tweening On HoldTime"] = false,
+        ["Silent Mode"] = true,
+        ["Hide If Low Health"] = true,
+        ["Low Health | Max Health"] = {3000, 4000},
+        ["V4"] = true,
+        ["LockCamera"] = true,
+        ["FPSBoost"] = false,
+        ["WhiteScreen"] = false,
+        ["BypassTP"] = true,
+        ["TweenSpeed"] = 350,
+        ["HopRegion"] = "Singapore"
+    },
+    ["Items"] = {
+        ["Melee"] = {
+            ["Enable"] = true,
+            ["Delay"] = 4,
+            ["Skills"] = {
+                ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
+                ["X"] = {["Enable"] = true, ["HoldTime"] = 0},
+                ["C"] = {["Enable"] = true, ["HoldTime"] = 0}
+                --   ["V"] = {["Enable"] = false, ["HoldTime"] = 0}
+            }
         },
-        ["Sword"] = {["Enable"] = true,
-            ["Z"] = {["Enable"] = true, ["Hold Time"] = 0.1},
-            ["X"] = {["Enable"] = true, ["Hold Time"] = 0.1}
+        ["Blox Fruit"] = {
+            ["Enable"] = false,
+            ["Delay"] = 6,
+            ["Skills"] = {
+                ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
+                ["X"] = {["Enable"] = true, ["HoldTime"] = 0},
+                ["C"] = {["Enable"] = true, ["HoldTime"] = 0},
+                ["V"] = {["Enable"] = true, ["HoldTime"] = 0},
+                ["F"] = {["Enable"] = true, ["HoldTime"] = 0}
+            }
         },
-        ["Gun"] = {["Enable"] = true,
-            ["Z"] = {["Enable"] = true, ["Hold Time"] = 0.1},
-            ["X"] = {["Enable"] = true, ["Hold Time"] = 0.1}
-        } 
-    } 
+        ["Sword"] = {
+            ["Enable"] = true,
+            ["Delay"] = 4,
+            ["Skills"] = {
+                ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
+                ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
+            }
+        },
+        ["Gun"] = {
+            ["Enable"] = true,
+            ["Delay"] = .1,
+            ["Skills"] = {
+                ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
+                ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
+            }
+        }
+    }
 }
 repeat task.wait() until game:IsLoaded()
 repeat task.wait() until game.Players
